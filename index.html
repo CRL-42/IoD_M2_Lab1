@@ -2,18 +2,122 @@
 <html>
 
 <head>
+  <title>Demo</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="Campbell Lodge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    table, th, td {
+        border: 1px solid black;
+    }
+  </style>
 </head>
 
 <body>
   <header>
     <nav>
       <!-- works like <a href="/index.html">Home</a> -->
-      <a href="/lab-1-html/src/index.html">Home</a>
+      <a href="/index.html">Home</a>
+      <a href="/form.html">Form</a>
     </nav>
   </header>
 
-  <main>  
-  </main>
+  <main>
+    <h1>My HTML journey</h1>
+
+    <article>
+      <h2>Learnning elements</h2>
+    <div>How much wood would a woodchuck chuck if a woodchuck could chuck wood?</div>
+    <div>Peter Piper picked a peck of pickled peppers.</div>
+    <div>Betty Botter bought some butter, but she said the butter's bitter.</div>
+    <span>Red lorry, yellow lorry.</span> <span>A big black bug bit a big black bear.</span> <span>Fuzzy Wuzzy was a
+      bear,
+      Fuzzy Wuzzy had no hair.</span>
+    <p>p represents paragraph       without preserving      spacing</p>
+    <pre>Text in         a pre element
+is displayed in a fixed-width
+font, and it preserves
+both      spaces and
+line breaks</pre>
+    <ul>Toyota cars
+      <li>Yaris</li>
+      <li>Camry</li>
+      <li>Prius</li>
+      <li>Corolla
+        <ul>
+          <li>Fielder</li>
+          <li>Touring</li>
+        </ul>
+      </li>
+    </ul>
+    <ol>Subaru cars
+      <li>Solterra</li>
+      <li>Crosstrek</li>
+      <li>Legacy
+        <ul>
+          <li>Outback</li>
+          <li>Liberty</li>
+        </ul>
+      </li>
+    </ol>
+    </article>
+
+    <article>
+      <h2>Learnning tables</h2>
+      <table>
+  <caption>
+    Demo Table
+  </caption>
+  <thead>
+    <tr>
+      <th colspan="2">Heading 1</th>
+      <th>Heading 2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell 1, Row 1</th>
+      <td>Cell 2, Row 1</td>
+      <td>Cell 3, Row 1</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Cell 1, Row 2, 3</th>
+      <td>Cell 2, Row 2</td>
+      <td>Cell 3, Row 2</td>
+    </tr>
+    <tr>
+      <td>Cell 2, Row 3</th>
+      <td>Cell 3, Row 3</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <th colspan="2">Footer</th>
+      <td>Demo complete</td>
+    </tr>
+  </tfoot>
+</table>
+    </article>
+
+    <article>
+      <h2>Learning media</h2>
+      <img src="https://picsum.photos/400/400" alt="Random Photo" width="320" height="160" />
+      <img src="assets\html_lab_image.jpg" alt="Hill top sun set" width="320" height="160" />
+      <video autoplay width="250">
+        <source src="/assets/flower.webm" type="video/webm">
+        Sorry, your browser doesn't support embedded videos.
+      </video>
+      <figure>
+        <figcaption>Trex roar sound</figcaption>
+        <audio autoplay src="/assets/t-rex-roar.mp3">
+          Your browser does not support the <code>audio</code> element.
+        </audio>
+      </figure>
+    </article>
+
+    </main>
 
   <footer>Copyright &copy; 2024</footer>
 </body>

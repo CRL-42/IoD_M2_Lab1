@@ -8,11 +8,48 @@
   <header>
     <nav>
       <!-- works like <a href="/index.html">Home</a> -->
-      <a href="/lab-1-html/src/index.html">Home</a>
+      <a href="/index.html">Home</a>
+      <a href="/form.html">Form</a>
     </nav>
   </header>
 
   <main>
+    <form method="POST" action="http://127.0.0.1:5500/form.html">
+      <div>
+      <lable for="FirstName">First name:
+      <input type="text" name="FirstName" />
+      </lable>
+      </div>
+      <div>
+      <lable for="LastName">Last name:
+      <input type="text" name="LastName" />
+      </lable>
+      </div>
+      <div>
+        <legend for="codeLanguage">Favourite coding language:</legend>
+        <lable><input type="radio" name="codeLanguage" value="html" />HTML</lable>
+        <lable><input type="radio" name="codeLanguage" value="css" />CSS</lable>
+        <lable><input type="radio" name="codeLanguage" value="js" />JS</lable>
+      </div>
+      <div>
+        <legend>Vehicle owned</legend>
+        <lable><input type="checkbox" name="vehicleType" value="toyota" />Boat</lable>
+        <lable><input type="checkbox" name="vehicleType" value="subaru" />Car</lable>
+        <lable><input type="checkbox" name="vehicleType" value="volkswagen" />Bike</lable>
+      </div>
+      <div>
+        <lable for+="cars">Car brand owned</lable>
+        <select name="cars">
+          <option value="none">None</option>
+          <option value="subaru">Subaru</option>
+          <option value="toyota">Toyota</option>
+          <option value="volkswagen">Volkswagen</option>
+        </select>
+      </div>
+      <div>
+        <button type="submit">Submit form</button>
+      </div>
+    </form>
   </main>
 
   <footer>Copyright &copy; 2024</footer>
